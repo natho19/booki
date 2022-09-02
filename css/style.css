@@ -31,7 +31,7 @@ section {
 }
 
 h1, h2, h3, h4 {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 p {
@@ -188,5 +188,46 @@ button {
 
 .info p {
     font-size: 16px;
+    margin-bottom: 0;
+}
+
+/***** Section accomodations *****/
+
+#accomodations {
+    display: flex;
+    align-items: stretch;
+}
+
+#accomodations > * {
+    padding: 40px 35px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+#accomodations h2 {
+    font-size: 22px;
+}
+
+.in-marseille h2, .most-popular-title {
+    margin-bottom: 23px;
+}
+
+.in-marseille {
+    flex-basis: 65%;
+    margin-right: 40px;
+    height: 500px;
+}
+
+.most-popular {
+    flex-grow: 1;
+}
+
+.most-popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.most-popular-title h2 {
     margin-bottom: 0;
 }
