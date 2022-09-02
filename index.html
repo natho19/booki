@@ -27,19 +27,63 @@
     <body>
         <!-- Header -->
         <header class="header">
-            <a href="#" class="logo">
+            <a href="/index.html" class="logo">
                 <img src="images/logo.png" alt="logo">
             </a>
             <nav class="navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a href="#accomodations">Hébergements</a>
+                        <a href="#">Hébergements</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#activities">Activités</a>
+                        <a href="#">Activités</a>
                     </li>
                 </ul>
             </nav>
         </header>
+        <main>
+            <section id="vacation">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <form action="#" class="search">
+                    <i class="fas fa-map-marker-alt search-icon"></i>
+                    <input type="text" name="city" class="search-input" value="Marseille, France" required>
+                    <button type="submit" class="search-button">Rechercher</button>
+                </form>
+                <div class="filters">
+                    <h2>Filtres</h2>
+                    <ul>
+                        <li>
+                            <a href="#" class="filter" data-filter="economic">
+                                <i class="fas fa-money-bill-wave filter-icon"></i>
+                                <span class="filter-label">Économique</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="filter" data-filter="family">
+                                <i class="fas fa-child filter-icon"></i>
+                                <span class="filter-label">Familial</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="filter" data-filter="romantic">
+                                <i class="fas fa-heart filter-icon"></i>
+                                <span class="filter-label">Romantique</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="filter" data-filter="animals-allowed">
+                                <i class="fas fa-dog filter-icon"></i>
+                                <span class="filter-label">Animaux autorisés</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <i class="fas fa-info info-icon"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section> 
+        </main>
     </body>
 </html>
