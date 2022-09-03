@@ -30,12 +30,28 @@ section {
     padding: 30px 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-weight: 700;
+}
+
+h1, h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
 }
 
 p {
     margin-bottom: 1.25rem;
+}
+
+strong {
+    font-weight: 700;
 }
 
 button {
@@ -45,6 +61,10 @@ button {
 
 :focus {
     outline: none;
+}
+
+.text-blue {
+    color: #0065FC !important;
 }
 
 /***** Header *****/
@@ -85,7 +105,6 @@ button {
 /***** Section vacation *****/
 
 #vacation h1 {
-    font-size: 22px;
     margin-bottom: .4em;
 }
 
@@ -195,6 +214,7 @@ button {
 
 #accomodations {
     display: flex;
+    justify-content: space-between;
     align-items: stretch;
 }
 
@@ -204,22 +224,71 @@ button {
     background-color: #F2F2F2;
 }
 
-#accomodations h2 {
-    font-size: 22px;
-}
-
 .in-marseille h2, .most-popular-title {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 
 .in-marseille {
-    flex-basis: 65%;
+    max-width: 65%;
     margin-right: 40px;
-    height: 500px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+}
+
+.card-link {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-link:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2)
+}
+
+.card-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 8px 10px;
+}
+
+.card-title, .card-description {
+    margin-bottom: 5px;
+}
+
+.card-stars i {
+    font-size: 12px;
+    color: #F2F2F2;
+}
+
+.more {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.more:hover {
+    text-decoration: underline;
 }
 
 .most-popular {
-    flex-grow: 1;
+    max-width: 31.5%;
 }
 
 .most-popular-title {
@@ -230,4 +299,33 @@ button {
 
 .most-popular-title h2 {
     margin-bottom: 0;
+}
+
+.most-popular-title i {
+    color: #0065FC;
+}
+
+.card-horizontal {
+    flex-basis: 100%;
+}
+
+.card-horizontal:last-child {
+    margin-bottom: 0;
+}
+
+.card-horizontal .card-link {
+    flex-direction: row;
+}
+
+.card-horizontal .card-img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    width: 135px;
+    height: 140px;
+}
+
+.card-horizontal .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
