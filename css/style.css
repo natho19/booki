@@ -1,4 +1,4 @@
-/***** General styles *****/
+/***** General Styles *****/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -102,7 +102,7 @@ button {
     color: #0065FC;
 }
 
-/***** Section vacation *****/
+/***** Section Vacation *****/
 
 #vacation h1 {
     margin-bottom: .4em;
@@ -210,7 +210,7 @@ button {
     margin-bottom: 0;
 }
 
-/***** Section accomodations *****/
+/***** Section Accomodations *****/
 
 #accomodations {
     display: flex;
