@@ -260,6 +260,7 @@ button {
 .card-link {
     display: flex;
     flex-direction: column;
+    height: 100%;
     padding: 5px;
     background-color: #fff;
     border-radius: 20px;
@@ -302,7 +303,7 @@ button {
 }
 
 .most-popular {
-    max-width: 31.5%;
+    max-width: 35%;
 }
 
 .most-popular-title {
@@ -335,6 +336,7 @@ button {
     border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
     width: 135px;
+    min-width: 135px;
     height: 140px;
 }
 
@@ -356,11 +358,11 @@ button {
 }
 
 #activities .card-img {
-    flex-basis: 390px;
+    flex-basis: 370px;
 }
 
 #activities .card-body {
-    padding: 20px;
+    padding: 18px 20px;
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -398,4 +400,120 @@ button {
 
 .footer-box a:hover {
     text-decoration: underline;
+}
+
+/***** Responsive Desktop  *****/
+
+@media screen and (max-width: 1150px) {
+
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+
+    .footer-box h2 {
+        font-size: 17px;
+    }
+
+    .footer-box a {
+        font-size: 15px;
+    }
+
+    .most-popular {
+        max-width: 36%;
+    }
+
+    .card-horizontal .card-img {
+        width: 120px;
+        min-width: 120px;
+    }
+}
+
+/***** Responsive Tablet  *****/
+
+@media screen and (max-width: 992px) {
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .filters ul {
+        flex-wrap: wrap;
+    }
+
+    .filter {
+        margin-bottom: 20px;
+    }
+
+    .filters li:last-child .filter {
+        margin-bottom: 0;
+    }
+
+    #accomodations {
+        flex-wrap: wrap;
+    }
+
+    .in-marseille {
+        max-width: inherit;
+        margin-right: inherit;
+        margin-bottom: 40px;
+    }
+
+    .most-popular {
+        max-width: inherit;
+    }
+
+    .most-popular .cards {
+        flex-wrap: nowrap;
+    }
+
+    .card-horizontal {
+        flex-basis: 30%;
+    }
+
+    .card-horizontal .card-link {
+        height: inherit;
+    }
+
+    #activities .card-img {
+        flex-basis: 180px;
+    }
+
+    #activities .card-body {
+        padding: 15px 20px;
+    }
+
+    footer {
+        padding: 40px 50px;
+    }
+
+    .footer-box h2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .footer-box a {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 975px) {
+
+    .most-popular .cards {
+        flex-wrap: wrap;
+    }
+
+    .card-horizontal {
+        flex-basis: 47%;
+    }
+
 }
