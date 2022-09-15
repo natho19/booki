@@ -413,7 +413,6 @@ button {
 /***** Responsive Desktop  *****/
 
 @media screen and (max-width: 1150px) {
-
     h1,
     h2 {
         font-size: 20px;
@@ -448,7 +447,6 @@ button {
 /***** Responsive Tablet  *****/
 
 @media screen and (max-width: 992px) {
-
     h3 {
         font-size: 14px;
     }
@@ -515,11 +513,9 @@ button {
     .footer-box a {
         font-size: 14px;
     }
-
 }
 
 @media screen and (max-width: 975px) {
-
     .most-popular .cards {
         flex-wrap: wrap;
     }
@@ -527,13 +523,11 @@ button {
     .card-horizontal {
         flex-basis: 47%;
     }
-
 }
 
 /***** Responsive mobile   *****/
 
 @media screen and (max-width: 768px) {
-
     body {
         padding: 0;
     }
@@ -543,7 +537,8 @@ button {
         padding-bottom: 25px;
     }
 
-    #vacation, #activities {
+    #vacation,
+    #activities {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -578,10 +573,12 @@ button {
         flex-basis: 50%;
         text-align: center;
         padding-bottom: 13px;
-        border-bottom: 3px solid #F2F2F2;
+        border-bottom: 3px solid #f2f2f2;
     }
 
-    .search-icon, .search-input, .search-button {
+    .search-icon,
+    .search-input,
+    .search-button {
         font-size: 15px;
     }
 
@@ -621,12 +618,13 @@ button {
     }
 
     .in-marseille {
-        background-color: #FFF !important;
+        background-color: #fff !important;
         margin-bottom: 0;
         padding-bottom: 0 !important;
     }
 
-    .card, #activities .card {
+    .card,
+    #activities .card {
         flex-basis: 47%;
     }
 
@@ -645,7 +643,6 @@ button {
 }
 
 @media screen and (max-width: 590px) {
-
     .in-marseille .cards {
         margin-bottom: 30px;
     }
@@ -656,7 +653,8 @@ button {
     }
 
     .card:last-child {
-        margin-bottom: 0;}
+        margin-bottom: 0;
+    }
     #activities .card {
         flex-basis: 100%;
     }
@@ -664,11 +662,9 @@ button {
     #activities .card-img {
         flex-basis: 135px;
     }
-
 }
 
 @media screen and (max-width: 285px) {
-
     .filter-label {
         font-size: 15px;
     }
@@ -678,5 +674,4 @@ button {
         min-width: 90px;
         height: 155px;
     }
-
 }
