@@ -109,7 +109,7 @@ button {
     color: #0065fc;
 }
 
-.nav-item:hover {
+.nav-item:has(a:hover) {
     border-color: #0065fc;
     transition: all 0.3s;
 }
