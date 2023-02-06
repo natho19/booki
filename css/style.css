@@ -29,7 +29,8 @@ a:hover {
     transition: all 0.3s;
 }
 
-section {
+section, 
+#accomodations {
     padding: 30px 0;
 }
 
@@ -104,13 +105,13 @@ button {
     border-top: 3px solid transparent;
 }
 
-.nav-item.active {
-    border-color: #0065fc;
-}
-
-.nav-item.active a,
 .nav-item a:hover {
     color: #0065fc;
+}
+
+.nav-item:hover {
+    border-color: #0065fc;
+    transition: all 0.3s;
 }
 
 /***** Section Vacation *****/
@@ -446,7 +447,7 @@ button {
 
 /***** Responsive Tablet  *****/
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     h3 {
         font-size: 14px;
     }
@@ -527,12 +528,13 @@ button {
 
 /***** Responsive mobile   *****/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     body {
         padding: 0;
     }
 
-    section {
+    section,
+    #accomodations {
         padding-top: 25px;
         padding-bottom: 25px;
     }
